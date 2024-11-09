@@ -1,1 +1,0 @@
-g++ -rdynamic CMakeFiles/matrixRenderer.dir/main.cpp.o -o matrixRenderer  -L/usr/lib/x86_64-linux-gnu  -lSDL2 -lstdc++ -L/usr/lib/x86_64-linux-gnu  -lSDL2 -lSDL2 

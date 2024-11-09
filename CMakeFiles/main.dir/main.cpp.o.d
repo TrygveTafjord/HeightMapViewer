@@ -1,4 +1,4 @@
-CMakeFiles/matrixRenderer.dir/main.cpp.o: \
+CMakeFiles/main.dir/main.cpp.o: \
  /home/trygt/renderer/HeightMapViewer/main.cpp /usr/include/stdc-predef.h \
  /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
  /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
