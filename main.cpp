@@ -3,11 +3,6 @@
 
 int main()
 {
-
-    std::cout << "we are in business baby!";
-
-
-
     if(SDL_Init(SDL_INIT_VIDEO) != 0){
         std::cout << "Error: " << SDL_GetError();
         return 1;
@@ -27,7 +22,9 @@ int main()
     w = dm.w;
     h = dm.h;
 
-    SDL_Window* window = SDL_CreateWindow("Testing Window", 0, 0, dm.w*0.25, dm.h*0.25, SDL_WINDOW_SHOWN);
+    std::cout << "dm.w: " << dm.w << ", dm.h: " << dm.h << '\n';
+
+    SDL_Window* window = SDL_CreateWindow("Testing Window", 0, 0, dm.w*0.5, dm.h*0.5, SDL_WINDOW_SHOWN);
     SDL_Delay(5000);
     SDL_DestroyWindow(window);
 
@@ -43,6 +40,8 @@ int main()
 
     //Muliggjør flytting av kamera
 
+
+    SDL_Quit();
 
 
 
