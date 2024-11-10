@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  -L/usr/lib/x86_64-linux-gnu  -lSDL2 
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/heightmap.cpp.o -o main  -L/usr/lib/x86_64-linux-gnu  -lSDL2 -lgdal 

@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+heightmap.o: heightmap.cpp.o
+.PHONY : heightmap.o
+
+# target to build an object file
+heightmap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/heightmap.cpp.o
+.PHONY : heightmap.cpp.o
+
+heightmap.i: heightmap.cpp.i
+.PHONY : heightmap.i
+
+# target to preprocess a source file
+heightmap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/heightmap.cpp.i
+.PHONY : heightmap.cpp.i
+
+heightmap.s: heightmap.cpp.s
+.PHONY : heightmap.s
+
+# target to generate assembly for a file
+heightmap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/heightmap.cpp.s
+.PHONY : heightmap.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... heightmap.o"
+	@echo "... heightmap.i"
+	@echo "... heightmap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

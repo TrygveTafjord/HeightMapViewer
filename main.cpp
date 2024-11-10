@@ -1,8 +1,26 @@
 #include <SDL2/SDL.h>
 #include <iostream>
+#include "heightmap.h"
+
 
 int main()
 {
+    std::cout << "Trying to write data to buffer \n";
+
+    const std::string path = "dtm1/data/dtm1_33_115_135.tif";
+
+    HeightMap heigh_data(path);
+
+    std::cout << "Trying to get data from the buffer \n";
+
+    std::shared_ptr<const float[]> data = heigh_data.getBuffer();
+
+    std::cout << "Trying to iterate over the data \n";
+
+    for (int i = 0; i < 15; i++){
+        std::cout << data[i] << '\n'; 
+    }
+
     if(SDL_Init(SDL_INIT_VIDEO) != 0){
         std::cout << "Error: " << SDL_GetError();
         return 1;

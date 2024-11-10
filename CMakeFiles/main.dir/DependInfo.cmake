@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/trygt/renderer/HeightMapViewer/heightmap.cpp" "CMakeFiles/main.dir/heightmap.cpp.o" "gcc" "CMakeFiles/main.dir/heightmap.cpp.o.d"
   "/home/trygt/renderer/HeightMapViewer/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
   )
 
