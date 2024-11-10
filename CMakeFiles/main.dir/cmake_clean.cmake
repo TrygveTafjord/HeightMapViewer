@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/heightmap.cpp.o"
-  "CMakeFiles/main.dir/heightmap.cpp.o.d"
-  "CMakeFiles/main.dir/main.cpp.o"
-  "CMakeFiles/main.dir/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/heightmap.cpp.o"
+  "CMakeFiles/main.dir/src/heightmap.cpp.o.d"
+  "CMakeFiles/main.dir/src/main.cpp.o"
+  "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/renderer.cpp.o"
+  "CMakeFiles/main.dir/src/renderer.cpp.o.d"
   "main"
   "main.pdb"
 )

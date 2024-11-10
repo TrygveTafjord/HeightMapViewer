@@ -1,9 +1,12 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(main)
 
+include_directories(include)
+
 set(SourceFiles
-    main.cpp
-    heightmap.cpp
+    src/main.cpp
+    src/heightmap.cpp
+    src/renderer.cpp
     )
 
 find_package(SDL2 REQUIRED)

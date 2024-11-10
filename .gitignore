@@ -1,4 +1,6 @@
 dtm1/
 build/
 CMakeCache.txt
+cmake
+cmake_install.cmake
 

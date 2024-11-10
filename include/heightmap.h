@@ -11,11 +11,16 @@
 
 class HeightMap {
     private:
+      
       int width, height;
       std::shared_ptr<float[]> buffer; 
 
     public:
+      
       HeightMap(const std::string& path_to_data);
+      
       std::shared_ptr<const float[]> getBuffer() const;
+      int getWidth() const {return this->width;}    
+      int getHeight() const {return this->height;}
 
 };

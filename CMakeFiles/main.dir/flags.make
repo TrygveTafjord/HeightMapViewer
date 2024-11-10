@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL2 -I/usr/include/gdal
+CXX_INCLUDES = -I/home/trygt/renderer/HeightMapViewer/include -I/usr/include/SDL2 -I/usr/include/gdal
 
 CXX_FLAGS = 
 
