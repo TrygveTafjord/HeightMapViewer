@@ -14,11 +14,15 @@ int main()
 
     engine.init();
 
-    while(engine.isRunning()){
-        engine.events();
-        engine.render();
-    
-    }
+    //while(engine.isRunning()){
+    //    engine.events();
+    //    engine.render();
+    //
+    //}
+
+    engine.events();
+    engine.render();
+    SDL_Delay(10000);
 
     std::cout << "og der var vi ferdig.." << '\n';
 
@@ -29,7 +33,7 @@ int main()
 
     //Beregne hvordan 3d-matrisen ser ut i ett 2d-rom
 
-    //Fjerne pixler bak hoorisonten
+    //Fjerne pixler bak horisonten
 
     //Farge pixler basert på høyde
 

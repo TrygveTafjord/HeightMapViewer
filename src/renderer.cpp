@@ -37,8 +37,42 @@ void Renderer::init(){
 }
 
 
-void Renderer::render(){
+void Renderer::render() {
+    // Create a texture to hold the pixel data
+    SDL_Texture* texture = SDL_CreateTexture(
+        this->renderer,
+        SDL_PIXELFORMAT_RGBA8888,
+        SDL_TEXTUREACCESS_STREAMING,
+        this->width,
+        this->height
+    );
+
+    // Lock the texture to gain access to the pixel buffer
+    Uint32* pixels = nullptr;
+    int pitch = 0;
+    SDL_LockTexture(texture, NULL, (void**)&pixels, &pitch);
+
+    // Fill the texture pixel buffer with your grayscale gradient
+    for (int row = 0; row < this->height; row++) {
+        for (int col = 0; col < this->width; col++) {
+            // Calculate the grayscale value (from left to right: 0 to 255)
+            Uint8 gray = static_cast<Uint8>(col * (255.0f / this->width));
+
+            // Set the color: R, G, B are equal (gray), and alpha is fully opaque (255)
+            Uint32 color = (255 << 24) | (gray << 16) | (gray << 8) | gray;
+
+            // Set the pixel at the current position
+            pixels[row * (pitch / 4) + col] = color;
+        }
+    }
+
+    // Unlock the texture and render it
+    SDL_UnlockTexture(texture);
+    SDL_RenderCopy(this->renderer, texture, NULL, NULL);
     SDL_RenderPresent(this->renderer);
+
+    // Destroy the texture to free memory
+    SDL_DestroyTexture(texture);
 }
 
 void Renderer::events(){
